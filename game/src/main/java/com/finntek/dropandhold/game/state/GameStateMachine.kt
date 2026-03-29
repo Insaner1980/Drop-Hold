@@ -31,6 +31,7 @@ class GameStateMachine(
                 timeSinceLastObjectOnPlatform = 0f
             }
 
+            GameState.INITIALIZING,
             GameState.PAUSED,
             GameState.GAME_OVER,
             -> Unit
