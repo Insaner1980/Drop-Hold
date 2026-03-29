@@ -1,0 +1,17 @@
+root = true
+
+[*]
+charset = utf-8
+end_of_line = lf
+indent_size = 4
+indent_style = space
+insert_final_newline = true
+trim_trailing_whitespace = true
+
+[*.kt]
+# Compose @Composable -funktiot käyttävät PascalCase-nimeämistä
+ktlint_function_naming_ignore_when_annotated_with = Composable
+# Bullet-kirjaston importit ovat selkeämpiä wildcardina
+ktlint_standard_no-wildcard-imports = disabled
+# Salli tiedostonimen poikkeaminen top-level-deklaraation nimestä (theme-tiedostot)
+ktlint_standard_filename = disabled

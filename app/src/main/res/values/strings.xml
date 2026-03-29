@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- App -->
+    <string name="app_name">Drop &amp; Hold</string>
+    <string name="app_name_full">Drop &amp; Hold: Balance Game</string>
+
+    <!-- Navigation -->
+    <string name="nav_play">Play</string>
+    <string name="nav_collection">Collection</string>
+    <string name="nav_settings">Settings</string>
+
+    <!-- Play screen -->
+    <string name="play_classic">PLAY CLASSIC</string>
+    <string name="play_daily">Daily Challenge</string>
+    <string name="play_quick">Quick Run</string>
+    <string name="play_zen">Zen Mode</string>
+    <string name="play_extreme">Extreme</string>
+    <string name="play_challenge">Challenge</string>
+    <string name="label_pro">PRO</string>
+    <string name="best_score">Best Score</string>
+    <string name="objects_record">Objects Record</string>
+
+    <!-- Pre-game -->
+    <string name="calibrating">Hold your phone steady…</string>
+    <string name="countdown_ready">Ready?</string>
+
+    <!-- In-game -->
+    <string name="label_score">Score</string>
+    <string name="label_objects">Objects</string>
+    <string name="label_time">Time</string>
+    <string name="label_pause">Pause</string>
+
+    <!-- Game over -->
+    <string name="game_over">GAME OVER</string>
+    <string name="new_best">NEW BEST!</string>
+    <string name="play_again">PLAY AGAIN</string>
+    <string name="share_result">Share Result</string>
+    <string name="go_home">Home</string>
+    <string name="shards_earned">+%d Shards earned</string>
+
+    <!-- Collection -->
+    <string name="tab_platforms">Platforms</string>
+    <string name="tab_themes">Themes</string>
+    <string name="tab_objects">Objects</string>
+    <string name="tab_achievements">Achievements</string>
+    <string name="tab_stats">Stats</string>
+
+    <!-- Settings -->
+    <string name="settings_gameplay">Gameplay</string>
+    <string name="settings_display">Display</string>
+    <string name="settings_about">About</string>
+    <string name="setting_sensitivity">Sensitivity</string>
+    <string name="setting_haptics">Vibration / Haptics</string>
+    <string name="setting_sound">Sound Effects</string>
+    <string name="setting_music">Music</string>
+    <string name="setting_theme">Theme</string>
+    <string name="setting_reduced_motion">Reduced Motion</string>
+    <string name="setting_colorblind">Colorblind Mode</string>
+    <string name="setting_fps">FPS Counter</string>
+    <string name="setting_reset">Reset All Data</string>
+    <string name="setting_restore">Restore Purchases</string>
+    <string name="setting_how_to_play">How to Play</string>
+
+    <!-- Pause -->
+    <string name="pause_resume">Resume</string>
+    <string name="pause_restart">Restart</string>
+    <string name="pause_settings">Settings</string>
+    <string name="pause_quit">Quit to Menu</string>
+
+    <!-- Pro -->
+    <string name="pro_title">Drop &amp; Hold Pro</string>
+    <string name="pro_upgrade">Upgrade — $2.99</string>
+    <string name="pro_one_time">One-time purchase</string>
+
+    <!-- Database -->
+    <string name="db_name" translatable="false">dropandhold.db</string>
+</resources>

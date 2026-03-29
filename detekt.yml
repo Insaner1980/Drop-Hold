@@ -1,0 +1,62 @@
+build:
+  maxIssues: 0
+
+complexity:
+  TooManyFunctions:
+    thresholdInClasses: 15
+
+empty-blocks:
+  EmptyFunctionBlock:
+    ignoreOverridden: true
+
+naming:
+  FunctionNaming:
+    excludes:
+      - "**/ui/**"
+      - "**/theme/**"
+      - "**/screen/**"
+      - "**/navigation/**"
+      - "**/component/**"
+
+  MatchingDeclarationName:
+    active: false
+
+style:
+  ForbiddenComment:
+    active: false
+
+  MagicNumber:
+    excludes:
+      - "**/config/**"
+      - "**/theme/**"
+    ignoreNumbers:
+      - "-1"
+      - "0"
+      - "1"
+      - "2"
+      - "3"
+      - "4"
+      - "6"
+      - "9"
+      - "10"
+      - "0.0"
+      - "0.5"
+      - "1.0"
+      - "2.0"
+
+  MaxLineLength:
+    maxLineLength: 140
+
+  MayBeConst:
+    active: true
+
+  ReturnCount:
+    max: 4
+
+  UnusedParameter:
+    allowedNames: "sensor|accuracy|physicsWorld"
+
+  WildcardImport:
+    excludeImports:
+      - "com.badlogic.gdx.physics.bullet.collision.*"
+      - "com.badlogic.gdx.physics.bullet.dynamics.*"

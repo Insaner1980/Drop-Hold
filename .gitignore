@@ -1,0 +1,42 @@
+# Gradle
+.gradle/
+build/
+!gradle/wrapper/gradle-wrapper.jar
+
+# IDE
+.idea/
+*.iml
+*.iws
+*.ipr
+.settings/
+.classpath
+.project
+out/
+
+# Android
+local.properties
+*.apk
+*.aab
+*.ap_
+*.dex
+
+# Kotlin
+*.class
+
+# OS
+.DS_Store
+Thumbs.db
+*.swp
+*~
+
+# Keystore (keep out of VCS)
+*.jks
+*.keystore
+!debug.keystore
+
+# Lint/analysis reports
+reports/
+
+# Claude
+.claude/
+.remember/
