@@ -53,6 +53,12 @@ sc    # semgrep + OWASP dependency-check → reports/
 - Jokainen pelimoodi toteuttaa `GameModeStrategy`-rajapinnan
 - Fysiikkaobjektit kierrätetään poolauksella (ei GC-paineita)
 
+## CI/CD
+
+GitHub Actions: CodeQL, SonarCloud, Semgrep + OWASP, Qodana (kaikki aktiivisia).
+SonarCloud project: `Insaner1980_Drop-Hold`. Linear project: "Drop & Hold" (Finnvek, Medium, In Progress).
+Milestone: v0.1 — Playable Prototype.
+
 ## AGP 9 -huomio
 
-KSP ei tue AGP 9:n sisäänrakennettua Kotlinia (03/2026). Siksi käytetään AGP 8.10 + erillistä kotlin-android-pluginia. Seuraa tilannetta: kun KSP tukee AGP 9:ää, voidaan päivittää.
+Käytetään vielä AGP 8.10 + erillistä kotlin-android-pluginia. Päivitys AGP 9.1.0 + Kotlin 2.3.x + Compose BOM 2026.03.00 odottaa — tehdään paikallisesti seuraavassa sessiossa (Linear: FIN-11).

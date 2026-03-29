@@ -72,12 +72,46 @@ assets/ — 3D-mallit, tekstuurit, äänitiedostot (jaettu game-moduulille)
 - Monetisaatio (AdMob, IAP)
 - Onboarding, jako-ominaisuus, asetukset-näyttö
 
+## CI/CD Pipeline
+
+GitHub Actions workflows in `.github/workflows/`:
+
+| Workflow | Purpose | Status |
+|----------|---------|--------|
+| `codeql.yml` | CodeQL security analysis (java-kotlin, JDK 17, manual build) | Active |
+| `sonar.yml` | SonarCloud code quality analysis | Active |
+| `security.yml` | Semgrep SAST + OWASP Dependency-Check (SARIF → Code Scanning) | Active |
+| `qodana.yml` | JetBrains Qodana code quality (Community for Android) | Active |
+
+External services:
+- **SonarCloud** — project `Insaner1980_Drop-Hold`, org `insaner1980`
+- **Qodana Cloud** — org "Finnvek Dev", project "Drop-Hold"
+
+Local tools:
+- `scripts/security-check.sh` — runs Semgrep + OWASP dependency-check locally, results in `reports/`
+
+---
+
+## Project Management
+
+- **Linear:** Project "Drop & Hold" in Finnvek team, priority Medium, status In Progress
+- **Linear URL:** https://linear.app/loikka1/project/drop-and-hold-9d28cd23b6d8
+- **Milestone:** v0.1 — Playable Prototype
+- **GitHub:** https://github.com/Insaner1980/Drop-Hold
+
+### Pending Tasks
+- Dependency upgrade: AGP → 9.1.0, Kotlin → 2.3.x, Compose BOM → 2026.03.00, KSP → 2.3.1, Gradle → 9.4.0
+
+---
+
 ## Laatutyökalut
 
 ```bash
 lc    # ktlint + detekt + Android lint → reports/
 sc    # semgrep + OWASP dependency-check → reports/
 ```
+
+Local script: `scripts/security-check.sh`
 
 ## Spec
 
