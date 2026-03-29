@@ -44,7 +44,7 @@ class ObjectSpawner(
 
     private fun spawnRandomObject(): SpawnEvent {
         val types = ObjectShapeType.entries
-        val type = types[(Math.random() * types.size).toInt()]
+        val type = types.random()
 
         val (mass, friction, restitution) =
             when {

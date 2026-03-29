@@ -161,8 +161,8 @@ class PhysicsWorld : Disposable {
 
         val motionState = GameMotionState()
         val offsetRange = PhysicsConfig.PLATFORM_RADIUS * PhysicsConfig.SPAWN_OFFSET_RANGE
-        val xOff = (Math.random().toFloat() - 0.5f) * offsetRange
-        val zOff = (Math.random().toFloat() - 0.5f) * offsetRange
+        val xOff = (kotlin.random.Random.nextFloat() - 0.5f) * offsetRange
+        val zOff = (kotlin.random.Random.nextFloat() - 0.5f) * offsetRange
         motionState.transform.idt().translate(xOff, PhysicsConfig.SPAWN_Y, zOff)
 
         val ci = btRigidBody.btRigidBodyConstructionInfo(mass, motionState, shape, localInertia)
