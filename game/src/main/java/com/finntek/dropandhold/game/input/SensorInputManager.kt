@@ -177,7 +177,9 @@ class SensorInputManager(
     override fun onAccuracyChanged(
         sensor: Sensor,
         accuracy: Int,
-    ) {}
+    ) {
+        // Not used — sensor accuracy changes don't affect tilt calculation
+    }
 
     companion object {
         private fun multiplyMatrices3x3(

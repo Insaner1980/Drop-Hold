@@ -33,7 +33,7 @@ fun PlayScreen() {
         )
 
         Button(
-            onClick = { /* TODO: launch GameActivity */ },
+            onClick = { /* Game launch will be connected in gameplay implementation phase */ },
             modifier =
                 Modifier
                     .fillMaxWidth()

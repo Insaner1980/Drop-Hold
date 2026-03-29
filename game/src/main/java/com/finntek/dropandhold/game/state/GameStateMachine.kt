@@ -31,7 +31,9 @@ class GameStateMachine(
                 timeSinceLastObjectOnPlatform = 0f
             }
 
-            else -> {}
+            GameState.PAUSED,
+            GameState.GAME_OVER,
+            -> Unit
         }
     }
 
@@ -63,9 +65,9 @@ class GameStateMachine(
                 if (checkGameOver(delta)) transition(GameState.GAME_OVER)
             }
 
-            GameState.PAUSED -> {}
-
-            GameState.GAME_OVER -> {}
+            GameState.PAUSED,
+            GameState.GAME_OVER,
+            -> Unit // No update logic needed for these states
         }
     }
 
@@ -81,5 +83,7 @@ class GameStateMachine(
         return false
     }
 
-    override fun dispose() {}
+    override fun dispose() {
+        // No resources to release — state is purely in-memory
+    }
 }
