@@ -733,7 +733,7 @@ The game is successful if:
 - **Drop & Hold: Balance Game** is the full Play Store listing name for ASO purposes.
 - "Drop" describes objects falling onto the platform. "Hold" describes the player's task of keeping them balanced. Two words, instant understanding.
 - The name is unique — no existing game on Play Store or App Store uses this name.
-- Package name suggestion: `com.finntek.dropandhold`
+- Package name suggestion: `com.finnvek.dropandhold`
 
 ---
 

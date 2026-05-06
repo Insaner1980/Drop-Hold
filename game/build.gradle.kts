@@ -8,7 +8,7 @@ plugins {
 val gdxVersion = "1.14.0"
 
 android {
-    namespace = "com.finntek.dropandhold.game"
+    namespace = "com.finnvek.dropandhold.game"
     compileSdk = 36
 
     defaultConfig {
