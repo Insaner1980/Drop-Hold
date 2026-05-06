@@ -125,6 +125,17 @@ class GameRenderer : Disposable {
         objectInstances.remove(obj)
     }
 
+    fun resize(
+        width: Int,
+        height: Int,
+    ) {
+        if (::camera.isInitialized) {
+            camera.viewportWidth = width.toFloat()
+            camera.viewportHeight = height.toFloat()
+            camera.update()
+        }
+    }
+
     fun render(physicsWorld: PhysicsWorld) {
         val sky = RenderConfig.SKY_COLOR
         Gdx.gl.glViewport(0, 0, Gdx.graphics.width, Gdx.graphics.height)

@@ -31,9 +31,12 @@ class GameStateMachine(
                 timeSinceLastObjectOnPlatform = 0f
             }
 
+            GameState.GAME_OVER -> {
+                game.emitGameResult()
+            }
+
             GameState.INITIALIZING,
             GameState.PAUSED,
-            GameState.GAME_OVER,
             -> Unit
         }
     }

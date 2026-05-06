@@ -43,4 +43,8 @@ object GameplayConfig {
 
     // Default settings
     const val DEFAULT_SENSITIVITY = 5
+
+    // Currency
+    /** Points → shards conversion: shards = score / SHARDS_DIVISOR. */
+    const val SHARDS_DIVISOR = 100f
 }

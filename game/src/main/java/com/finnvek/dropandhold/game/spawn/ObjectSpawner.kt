@@ -17,6 +17,7 @@ import com.finnvek.dropandhold.game.render.ObjectShapeType
 class ObjectSpawner(
     private val physicsWorld: PhysicsWorld,
     private val renderer: GameRenderer,
+    private val onSpawn: () -> Unit = {},
 ) {
     private var timeSinceLastDrop = 0f
     private var dropInterval = GameplayConfig.INITIAL_DROP_INTERVAL
@@ -70,6 +71,7 @@ class ObjectSpawner(
         val obj = physicsWorld.spawnObject(shape, mass * weightMultiplier, friction, restitution)
         renderer.addObjectVisual(obj, type)
         spawnedObjects.add(obj)
+        onSpawn()
         return SpawnEvent(obj, type)
     }
 
