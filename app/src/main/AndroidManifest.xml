@@ -36,7 +36,7 @@
 
         <!-- LibGDX Game Activity -->
         <activity
-            android:name="com.finntek.dropandhold.game.GameActivity"
+            android:name="com.finnvek.dropandhold.game.GameActivity"
             android:configChanges="keyboard|keyboardHidden|navigation|orientation|screenSize|screenLayout|uiMode"
             android:screenOrientation="portrait" />
 

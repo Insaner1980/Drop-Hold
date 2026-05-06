@@ -25,11 +25,11 @@
 
 # Kotlin Serialization
 -keepattributes *Annotation*, InnerClasses
--keep,includedescriptorclasses class com.finntek.dropandhold.**$$serializer { *; }
--keepclassmembers class com.finntek.dropandhold.** {
+-keep,includedescriptorclasses class com.finnvek.dropandhold.**$$serializer { *; }
+-keepclassmembers class com.finnvek.dropandhold.** {
     *** Companion;
 }
--keepclasseswithmembers class com.finntek.dropandhold.** {
+-keepclasseswithmembers class com.finnvek.dropandhold.** {
     kotlinx.serialization.KSerializer serializer(...);
 }
 
@@ -37,4 +37,4 @@
 -keep class * extends com.google.protobuf.GeneratedMessageLite { *; }
 
 # Keep game model classes (Parcelable)
--keep class com.finntek.dropandhold.game.model.** { *; }
+-keep class com.finnvek.dropandhold.game.model.** { *; }

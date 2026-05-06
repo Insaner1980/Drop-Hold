@@ -8,11 +8,11 @@ plugins {
 }
 
 android {
-    namespace = "com.finntek.dropandhold"
+    namespace = "com.finnvek.dropandhold"
     compileSdk = 36
 
     defaultConfig {
-        applicationId = "com.finntek.dropandhold"
+        applicationId = "com.finnvek.dropandhold"
         minSdk = 26
         targetSdk = 36
         versionCode = 1
